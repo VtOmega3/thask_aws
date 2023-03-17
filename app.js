@@ -7,9 +7,9 @@ app.get('/', (req, res) => {
 })
 
 app.post('/test', (req, res) => {
-  const { name } = request.body;
+  const { name } = req.body;
 
-  return res.json({name})
+  return res.json({ name })
 })
 
 app.listen(port, () => console.log(`server is running on ${port}`))
